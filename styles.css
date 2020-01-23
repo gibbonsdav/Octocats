@@ -1,0 +1,61 @@
+.authors img {
+  width: 20px;
+  height: 20px;
+}
+
+.octocat > a > img {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: solid 0.5px lightgray;
+}
+
+.octodex {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+.image-number {
+  justify-content: left;
+  color: lightgray;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+.image-footer {
+  display: flex;
+  justify-content: right;
+}
+
+.octocat::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #c0c6cc transparent transparent transparent;
+}
+
+.authors > li > a > img {
+  display: flex;
+  position: relative;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  padding: 2px;
+}
